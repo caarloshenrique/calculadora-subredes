@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter:700|EB+Garamond|Federant');
+@import url('https://fonts.googleapis.com/css?family=Arvo:700|Varela+Round');
+
+body{
+    background: url(../images/background.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'EB Garamond', serif;
+    padding: 0;
+    margin: 0;
+    color: aliceblue;
+}
+
+/*Header*/
+.header{
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.title-header{
+    font-family: 'Federant', cursive;
+    font-size: 5rem;
+    margin: 0;
+    text-align: center;
+}
+
+.menu-header{
+    width: 50%;
+    margin: 0 25%;
+    display: flex;
+}
+
+.item-menu-header{
+    width: 40%;
+    margin: 0 5%;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.6rem;
+    background: rgba(46, 46, 46, 0.8);
+    border-radius: 5%;
+}
+
+/*Content*/
+
+.title-page{
+    font-family: 'Bitter', serif;
+    text-align: center;
+    font-size: 3rem;
+}
+
+#primeira_parte,
+#segunda_parte{
+    padding-bottom: 5vh;
+}
+
+.title_description{
+    text-align: center;
+    font-size: 2em;
+    color: azure;
+}
+
+.image{
+    width: 30vh;
+    display: block;
+    margin: 0 auto;
+}
+
+li{
+    list-style: none;
+}
+
+/*Footer*/
+
+
+.footer{
+    height: 5vh;
+    margin-top: 2vh;
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+}
+
+.text-footer{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.2rem;   
+    text-align: right;
+    line-height: 6vh;
+    margin: 0;
+    margin-right: 10px;
+}
+
+/*itens*/
+
+.input{
+    width: 60%;
+    border-radius: 5px;
+    border-color: #C0C0C0;
+    background: #DCDCDC;
+    margin: 1vh auto 0 auto;
+    height: 5vh;
+    text-align: center;
+    display: block;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.buttons{
+    width: 50%;
+    margin: 2vh 25% 0 25%;    
+    display: flex
+}
+
+.button{
+    flex: 1;
+    margin: 0 5%;
+    height: 8vh;
+    border-radius: 5px;
+    background-color: rgba(238, 238, 238, 0.8);
+    border-color: rgb(105,105,105);
+    font-family: 'Arvo', serif;
+}
+
+/*tables*/
+
+.content-table{
+    width: 80%;
+    margin: 5vh 10%;
+}
+
+.table,
+.line-table,
+.title-line,
+.content-line{
+    border: 1px solid black;
+}
+
+.table{
+    width: 60%;
+    margin: 0 20%;
+    text-align: center;
+    background: rgba(20, 20, 20, 0.9)
+}
+
+.title-line{
+    background: rgba(20, 20, 20, 0.8);
+    color: rgb(206, 206, 206);
+    width: 40%;
+}
+
+.content-line{
+    background: rgba(75, 75, 75, 0.8);
+    color: rgb(255, 255, 255);
+}
+
+/* Extras */
+
+.cursor_click{
+    cursor:pointer;
+}

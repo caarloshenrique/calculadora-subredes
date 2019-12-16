@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/subnet.css">
+
+
+    <title>Sub-rede</title>
+</head>
+
+<body>
+    <div class="header">
+        <h5>Divisão por quantidade de sub-redes</h5>
+        <h5>Divisão por quantidade dem hosts de sub-rede</h5>
+        <h5>Descobrir divisão atual da sub-rede</h5>
+    </div>
+
+    <div class="content">
+        <div id="primeira_parte">
+            <h2 class="title_description">Calculadora de Sub-redes na Classe C</h2>
+            <div class="content_part">
+                <input type="text" class="input" id="ip" placeholder="Insira o IP desejado da classe C">
+                <input type="text" class="input" id="quant" placeholder="Insira a quantidade de sub redes desejada">
+                <div class="buttons">
+                    <button v-on:click="calc" class="button">Calcular</button>
+                    <button v-on:click="clear" class="button">Limpar</button>
+                </div>
+            </div>
+            <div class="content-table">
+                <table class="table">
+
+                    <tr class="line-table">
+                        <th class="title-line">
+                            Nova Máscara
+                        </th>
+                        <td class="content-line"> {{ nova_mascara }} </td>
+                    </tr>
+
+                    <tr class="line-table">
+                        <th class="title-line">
+                            Host's válidos Total
+                        </th>
+                        <td class="content-line"> {{ hosts_validos_total }} </td>
+                    </tr>
+
+                    <tr class="line-table">
+                        <th class="title-line">
+                            Host's válidos por Sub Rede
+                        </th>
+                        <td class="content-line"> {{ hosts_validos }} </td>
+                    </tr>
+
+                    <tr class="line-table">
+                        <th class="title-line">
+                            Sub Redes Criadas
+                        </th>
+                        <td class="content-line">
+                            <li v-for="item in sub_redes"> {{ item }} </li>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="../scripts/global.js"></script>
+    <script src="../scripts/subnet.js"></script>
+</body>
+
+</html>

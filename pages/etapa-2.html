@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/subnet.css">
+
+
+    <title>Sub-rede</title>
+</head>
+
+<body>
+    <div class="header">
+        <h5>Divisão por quantidade de sub-redes</h5>
+        <h5>Divisão por quantidade dem hosts de sub-rede</h5>
+        <h5>Descobrir divisão atual da sub-rede</h5>
+    </div>
+
+    <div class="content">
+        <div id="segunda_parte">
+            <h2 class="title_description">Sub Redes por Quantidade de Host's</h2>
+            <div class="content_part">
+                <input type="text" class="input" id="ip_desejo" placeholder="Insira o IP da rede desejada">
+                <input type="text" class="input" id="quant_hosts" placeholder="Insira a quantidade de host's por Sub Rede">
+                <div class="buttons">
+                    <button v-on:click="calcular" class="button">Calcular</button>
+                    <button v-on:click="clear" class="button">Limpar</button>
+                </div>
+            </div>
+
+            <div class="content-table">
+                <table class="table">
+                    <tr class="line-table">
+                        <th class="title-line">
+                            Nova Máscara
+                        </th>
+                        <td class="content-line"> {{ mask }}</td>
+                    </tr>
+                    <tr class="line-table">
+                        <th class="title-line">Quantidade de Sub Redes Possíveis</th>
+                        <td class="content-line"> {{ quant_sub_redes }}</td>
+                    </tr>
+                    <tr class="line-table">
+                        <th class="title-line">
+                            Sub Redes Criadas
+                        </th>
+                        <td class="content-line">
+                            <li v-for="item in sub_redes"> {{ item }} </li>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="../scripts/global.js"></script>
+    <script src="../scripts/subnet.js"></script>
+</body>
+
+</html>
