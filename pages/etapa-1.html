@@ -5,27 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/subnet.css">
-
-
     <title>Sub-rede</title>
 </head>
 
 <body>
-    <div class="header">
-        <h5>Divisão por quantidade de sub-redes</h5>
-        <h5>Divisão por quantidade dem hosts de sub-rede</h5>
-        <h5>Descobrir divisão atual da sub-rede</h5>
-    </div>
+        <div class="scrollmenu">
+            <a href="../pages/etapa-1.html">Etapa 1</a>
+            <a href="../pages/etapa-2.html">Etapa 2</a>
+            <a href="../pages/etapa-3.html">Etapa 3</a>
+          </div>
 
     <div class="content">
         <div id="primeira_parte">
-            <h2 class="title_description">Calculadora de Sub-redes na Classe C</h2>
+            <h2 class="title_description">Calculadora de sub-redes (Classe C)</h2>
             <div class="content_part">
-                <input type="text" class="input" id="ip" placeholder="Insira o IP desejado da classe C">
-                <input type="text" class="input" id="quant" placeholder="Insira a quantidade de sub redes desejada">
+                <input type="text" class="input" id="ip" placeholder="Insira um IP de classe C">
+                <input type="text" class="input" id="quant" placeholder="Insira a quantidade de sub-redes desejada">
                 <div class="buttons">
                     <button v-on:click="calc" class="button">Calcular</button>
                     <button v-on:click="clear" class="button">Limpar</button>
@@ -36,28 +34,28 @@
 
                     <tr class="line-table">
                         <th class="title-line">
-                            Nova Máscara
+                            Nova máscara
                         </th>
                         <td class="content-line"> {{ nova_mascara }} </td>
                     </tr>
 
                     <tr class="line-table">
                         <th class="title-line">
-                            Host's válidos Total
+                            Total de host válidos
                         </th>
                         <td class="content-line"> {{ hosts_validos_total }} </td>
                     </tr>
 
                     <tr class="line-table">
                         <th class="title-line">
-                            Host's válidos por Sub Rede
+                            Host válidos por Sub-rede
                         </th>
                         <td class="content-line"> {{ hosts_validos }} </td>
                     </tr>
 
                     <tr class="line-table">
                         <th class="title-line">
-                            Sub Redes Criadas
+                            Sub-redes criadas
                         </th>
                         <td class="content-line">
                             <li v-for="item in sub_redes"> {{ item }} </li>
