@@ -1,12 +1,13 @@
-.input{
-    margin-top: 2vh;
+.input {
+  margin-top: 2vh;
+  border: none;
 }
 
-.content_part{
-    width: 60%;
-    margin: 0 20%;
+.content_part {
+  width: 60%;
+  margin: 0 20%;
 }
 
-.content{
-    width: 100%;
+.content {
+  width: 100%;
 }

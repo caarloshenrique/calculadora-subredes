@@ -1,120 +1,130 @@
-body{
-    background-color: #f7f7f9;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: 'Roboto';
-    padding: 0;
-    margin: 0;
-    color:#000;
+body {
+  background-color: #f7f7f9;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Roboto";
+  padding: 0;
+  margin: 0;
+  color: #000;
 }
 
 /*Content*/
 
-.title-page{
-    text-align: center;
-    font-size: 3rem;
+.title-page {
+  text-align: center;
+  font-size: 3rem;
 }
 
 #primeira_parte,
-#segunda_parte{
-    padding-bottom: 5vh;
+#segunda_parte {
+  padding-bottom: 5vh;
 }
 
-.title_description{
-    text-align: center;
-    font-size: 2em;
-    color: #445FE8;
+.title_description {
+  text-align: center;
+  font-size: 2em;
+  color: #445fe8;
 }
 
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 
 /*itens*/
 
-.input{
-    width: 60%;
-    border-radius: 5px;
-    border-color: #fff;
-    background: #fff;
-    margin: 1vh auto 0 auto;
-    height: 5vh;
-    text-align: center;
-    display: block;
-    color: #000;
+.input {
+  width: 60%;
+  border-radius: 5px;
+  border-color: #fff;
+  background: #fff;
+  margin: 1vh auto 0 auto;
+  height: 5vh;
+  text-align: center;
+  display: block;
+  color: #000;
 }
 
-.buttons{
-    width: 50%;
-    margin: 2vh 25% 0 25%;    
-    display: flex
+.buttons {
+  width: 50%;
+  margin: 2vh 25% 0 25%;
+  display: flex;
 }
 
-.button{
-    flex: 1;
-    margin: 0 5%;
-    height: 6vh;
-    color: #fff;
-    border-radius: 5px;
-    background-color: #445FE8;
-    border: none;
-    margin-top: 40px;
+.button {
+  flex: 1;
+  margin: 0 5%;
+  height: 6vh;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #445fe8;
+  border: none;
+  margin-top: 40px;
+  cursor: pointer;
 }
 
 /*tables*/
 
 table {
-    border-collapse: collapse;
+  border-collapse: collapse;
 }
 
-.content-table{
-    width: 80%;
-    margin: 5vh 10%;
+.content-table {
+  width: 80%;
+  margin: 5vh 10%;
 }
 
-.content-line{
-    border: 1px solid;
+.content-line {
+  border: 1px solid;
 }
 
-.table{
-    width: 60%;
-    margin: 0 20%;
-    text-align: center;
-    background: #445FE8;
+.table {
+  width: 60%;
+  margin: 0 20%;
+  text-align: center;
+  background: #445fe8;
 }
 
-.title-line{
-    background: #445FE8;
-    color: #fff;
-    width: 40%;
+.title-line {
+  background: #445fe8;
+  color: #fff;
+  width: 40%;
 }
 
-.content-line{
-    background: #f7f7f9;
-    color: #000;
+.content-line {
+  background: #f7f7f9;
+  color: #000;
 }
 
 /* Extras */
 
-.cursor_click{
-    cursor:pointer;
+.cursor_click {
+  cursor: pointer;
 }
 
 div.scrollmenu {
-    background-color: #445FE8;
-    overflow: auto;
-    white-space: nowrap;
-  }
-  
-  div.scrollmenu a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-  }
-  
-  div.scrollmenu a:hover {
-    background-color:#445FE1;
- }
+  background-color: #445fe8;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.button-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #445fe1;
+}
