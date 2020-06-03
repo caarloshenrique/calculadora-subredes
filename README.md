@@ -2,7 +2,7 @@
 
 > Um projeto de calculadora de sub-redes utilizando Vue CDN
 
-## Interfaces
+## :computer: Interfaces
 
 ### Etapa 1
 
@@ -22,7 +22,7 @@
   <img src="img/etapa-3.png">
 </p>
 
-## Demonstração
+## :arrow_forward: Demonstração
 
 <p align="center">
   <img src="img/demo.gif">
