@@ -37,6 +37,10 @@ O projeto foi feito utilizando as seguintes tecnologias:
 - [VueJS](https://vuejs.org/)
 {...}
 
+## :clipboard: Pré-requisitos
+
+- [Vue CLI](https://github.com/vuejs/vue-cli)
+
 ## :fire: Executando a aplicação
 Execute o arquivo `index.html` localizado na raiz do projeto.
 
