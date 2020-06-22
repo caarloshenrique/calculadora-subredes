@@ -28,6 +28,15 @@
   <img src="img/demo.gif">
 </p>
 
+## :rocket: Tecnologias utilizadas 
+
+O projeto foi feito utilizando as seguintes tecnologias:
+
+- [HTML](https://www.w3schools.com/html/)
+- [CSS](https://www.w3schools.com/css/)
+- [VueJS](https://vuejs.org/)
+{...}
+
 ## :fire: Executando a aplicação
 Execute o arquivo `index.html` localizado na raiz do projeto.
 
