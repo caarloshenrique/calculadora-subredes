@@ -28,6 +28,9 @@
   <img src="img/demo.gif">
 </p>
 
+## :fire: Executando a aplicação
+Execute o arquivo `index.html` localizado na raiz do projeto.
+
 ## :page_facing_up: Licença 
 Este projeto é desenvolvido sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para saber mais detalhes.
 
